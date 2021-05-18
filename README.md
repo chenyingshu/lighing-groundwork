@@ -1,1 +1,1 @@
-# lighing project groundwork
+# lighting project groundwork
