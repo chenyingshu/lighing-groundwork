@@ -1,1 +1,1 @@
-# lighing-groundwork
+# lighing project groundwork
