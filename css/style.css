@@ -1,8 +1,23 @@
+
 body {
 	margin: 2%;
 	justify-content: flex-start
 }
 
+.notecard {
+    border-left: 6px solid #1e7f9d;
+    margin: 0 0 24px;
+    padding: 12px;
+	font-family: Andale Mono, monospace
+}
+
+.notecard.note {
+    background-color: #dae5ea;
+}
+
+.intro {
+
+}
 
 .row {
 	flex-wrap: wrap;
