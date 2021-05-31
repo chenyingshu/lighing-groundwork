@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+
+<script>
+  function selectData(id) {
+    var tags = document.getElementById('myTopnav').getElementsByTagName('a');
+    for (let x of tags) {
+      if (x.className === "active") {
+        x.className = "";
+        document.getElementById(x.id+"_row").className += " hide";
+      }
+    }
+    var selected = document.getElementById(id);
+    selected.className = "active";
+    
+    //joining path of directory 
+    var gallery_doc =  document.getElementById(id+"_row");
+    gallery_doc.className = "row";
+
+  }
+
+
+</script>
+
+
+<head>
+	<title>Lighting Dataset Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/require.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>Dataset Gallery</h1>
+  <p>Click different category to see details</p>
+</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="#google" id="google" class="active" onclick="selectData('google')">Google</a>
+  <a href="#lsun" id="lsun" onclick="selectData('lsun')">LUSN</a>
+  <!-- <a href="javascript:void(0);" class="icon">
+    <i class="fa fa-bars"></i>
+  </a> -->
+</div>
+
+<section>
+  <!-- Photo Grid -->
+  <div class="row" id="google_row"> 
+    <p class="column_50"> Room with Sunshine </p>
+    <p class="column_50"> Room without Sunshine </p>
+    
+    <div class="column">
+      <img src="google/sun_nosun/sun/12.room-furniture-indoors-inside.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/13.architecture-building.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/37.home-bed-furniture-internal-lighting-room-bedroom-4786791.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/108.2888116442_27a1cc1869_b.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/143.bathroom-interior-incidence-of-light-window-mood-luxury.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/162.home-pillow-room-bedroom-bed-interior-mattress-3538020.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/170.bathroom-modern-design-lighting-interior-home-modern-bathroom-room-sink.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/171.bedroom-bed-cupboard-frame.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/187.interior-hotel-rendering-visualization-thumbnail.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/194.abandoned-apartment-bedroom-design.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="google/sun_nosun/sun/197.clean-cosy-bedroom-luxury-beds-light-room.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/201.bed-room-bedroom-apartment-thumbnail.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/202.tuscany-bedroom-table-the-interior-of-the-design-room-inside-light-decoration.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/209.bedroom-lighting-room-bed-home-internal-furniture-ornament-pillow.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/295.window-pillows-interior-arc-divan-relax.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/297.empty-interior-design-neon-light-retro-room-tables-toronto-chair-table-seat-thumbnail.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/307.window-light-bronze-image.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/314.bed-space-bedroom-room-interior-old-past-antique-indoors.jpg" style="width:100%">
+      <img src="google/sun_nosun/sun/354.modern-apartment-bedroom-bed.jpg" style="width:100%">
+    </div>
+
+    <div class="column">
+      <img src="google/sun_nosun/nosun/1.bedroom-interior-design-style.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/2.room-home-the-interior-furniture-decor-design.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/3.interior-design-modern-style-home-decor-apartment-bedroom-indoors-interior-asia-style-modern.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/4.interior-design-modern-style-home-decor-apartment-bedroom.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/5.hotel-room-room-bed-bedroom-stay-luxury-cosy-comfort-lamp.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/6.interior-design-bed-sleep-furniture-house-bedroom-5406644.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/7.modern-minimalist-bedroom-contemporary-indoors-inside-interior-interior-design-white-light-clean.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/8.bedroom-visualization-interior-design-bed-furniture-bedroom-set.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/23.apartment-bed-bedroom-blanket.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/10.bedroom-interior-design-style-indoors-luxury-living-lifestyle-cozy.jpg" style="width:100%">
+    </div>
+
+    <div class="column">
+      <img src="google/sun_nosun/nosun/11.bedroom-beds-interior-design-lamps.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/14.bedroom-search-interior-solutions-design-interior-2974347.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/15.43801476301_c7702da67d_b.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/16.bedroom-bed-wall-decoration.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/17.bed-621742_960_720.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/18.apartment-bedroom-bed-room.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/19.bed-bedroom-blanket-color.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/20.bed-bedroom-theatre-lights-modern-house-rest-sleep-attractive-lifestyle.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/21.furniture-bed-room-bedroom.jpg" style="width:100%">
+      <img src="google/sun_nosun/nosun/22.the-interior-of-the-architecture-mood-lighting.jpg" style="width:100%">
+    </div>
+    
+  </div>
+
+  <div class="row hide" id="lsun_row"> 
+   <!--  <div class="column">
+      <img src="/w3images/wedding.jpg" style="width:100%">
+      <img src="/w3images/rocks.jpg" style="width:100%">
+      <img src="/w3images/falls2.jpg" style="width:100%">
+      <img src="/w3images/paris.jpg" style="width:100%">
+      <img src="/w3images/nature.jpg" style="width:100%">
+      <img src="/w3images/mist.jpg" style="width:100%">
+      <img src="/w3images/paris.jpg" style="width:100%">
+    </div> -->
+    
+  </div>
+<section> 
+
+</body>
+</html>
+
