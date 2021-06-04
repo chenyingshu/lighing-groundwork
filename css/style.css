@@ -25,6 +25,7 @@ body {
 	justify-content: flex-start;
 }
 .col {
+	max-width: 33.33%;
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
