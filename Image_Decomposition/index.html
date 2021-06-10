@@ -8,16 +8,17 @@
 <body>
 	<header class="notecard note">
 		<h1 class="row intro"> Image Decomposition</h1>
-		<p class="row intro">Unblending: has potential to separate lighting layer</p>
+		<p class="row intro">Color Decomposition (Unblending): has potential to separate lighting layer; cannot separate sunlight and artificial lights.</p>
 		<p class="row intro">
-	        USI3D: too generic
+	        Image Decomposition (USI3D): too generic, not suitable for our case
 	    </p>
 	</header>
 
 	<hr>
 	<!-- In-domain GAN Inversion -->
-	<h1 class="row"><a href="https://github.com/yuki-koyama/unblending"> Unblending </a></h1>
+	<h1 class="row">Color segmentation: <a href="https://github.com/yuki-koyama/unblending"> Unblending </a></h1>
 	<p class="row">I mannually set Yellow Normal (target commen yellowish lights) and default layers (Multiply dark violet, Normal green, Normal red, and Normal gray).</p>
+	<p>I blended layers with out yellow layer for reference (Blend_layer_0-3).</p>
 
 	<section class="row">
 		<div class='col'>
@@ -45,7 +46,7 @@
 
 
 	<hr>
-	<h1 class="row"><a href="https://github.com/DreamtaleCore/USI3Dg"> USI3D </a></h1>
+	<h1 class="row">Image Decomposition: <a href="https://github.com/DreamtaleCore/USI3Dg"> USI3D </a></h1>
 	<p class="row">Unsupervised Learning for Intrinsic Image Decomposition from a Single Image</p>
 	<p class="row">Used model trained with &nbsp<a  href="http://opensurfaces.cs.cornell.edu/publications/intrinsic/">IIW</a>.</p>
 
