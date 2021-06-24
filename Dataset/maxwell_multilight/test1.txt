@@ -1,0 +1,102 @@
+Original:
+ISO=1500
+Shutter=1/120
+A ceiling=80000 lm
+B leds=15000 lx
+C Back1 (purple) = 2500 lm
+D Window = 180000 lm
+E Plants = 450 lm
+F Back2 (white) = 3000 lm
+
+Zero-dark (Sample_0)
+ISO=1500
+Shutter=1/120
+A ceiling=0 lm
+B leds=0 lx
+C Back1 (purple) = 0 lm
+D Window = 0 lm
+E Plants = 0 lm
+F Back2 (white) = 0 lm
+
+A (Sample_1)
+A ceiling=0 lm
+
+B (Sample_2)
+B leds=15000 lx
+
+C (Sample_3)
+C Back1 (purple) = 2500 lm
+
+D (Sample_4) - like day time ambient light
+D Window = 180000 lm
+
+E (Sample_5)
+E Plants = 450 lm
+
+F (Sample_6) - like night time ambient light
+F Back2 (white) = 3000 lm
+
+A+B (Sample_1_2)
+A ceiling=80000 lm
+B leds=15000 lx
+
+A+C (Sample_1_3)
+A ceiling=80000 lm
+C Back1 (purple) = 2500 lm
+
+A+D (Sample_1_4)
+A ceiling = 80000 lm
+D Window = 180000 lm
+
+A+E (Sample_1_5)
+A ceiling = 80000 lm
+E Plants = 450 lm
+
+A+F (Sample_1_6)
+A ceiling = 80000 lm
+F Back2 (white) = 3000 lm
+
+B+C (Sample_2_3): leds+back1
+B+D (Sample_2_4): leds+window
+B+E (Sample_2_5): leds+plants
+B+F (Sample_2_6): leds+back2
+
+C+D (sample_3_4): back1+window
+C+E (sample_3_5): back1+plants
+C+F (sample_3_6): back1+back2
+
+D+E (sample_4_5): window+plants
+D+F (sample_4_6): window+back2
+
+E+F (sample_5_6): plants+back2
+
+
+A+B+C (Sample_1_2_3): ceiling+leds+back1   
+A+B+D (Sample_1_2_4): ceiling+leds+window  
+A+B+E (Sample_1_2_5): ceiling+leds+plants  
+A+B+F (Sample_1_2_6): ceiling+leds+back2
+
+A+C+D (Sample_1_3_4): ceiling+back1+window
+A+C+E (Sample_1_3_5): ceiling+back1+plants
+A+C+F (Sample_1_3_6): ceiling+back1+back2
+
+A+D+E (Sample_1_4_5): ceiling+window+plants
+A+D+F (Sample_1_4_6): ceiling+window+back2
+
+A+E+F (Sample_1_5_6): ceiling+plants+back2
+
+B+C+D (Sample_2_3_4): leds+back1+window
+B+C+E (Sample_2_3_5): leds+back1+plants
+B+C+F (Sample_2_3_6): leds+back1+back2
+
+B+D+E (Sample_2_4_5): leds+window+plants
+B+D+F (Sample_2_4_6): leds+window+back2
+
+B+E+F (Sample_2_5_6): leds+plants+back2
+
+C+D+E (Sample_3_4_5): back1+window+plants
+C+D+F (Sample_3_4_6): back1+window+back2
+
+C+E+F (Sample_3_5_6): back1+plants+back2
+
+D+E+F (Sample_4_5_6): window+plants+back2
